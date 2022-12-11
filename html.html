@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" type="image/x-icon" href="../Home/jpg.3.png">
+    <title>Sign page</title>
+</head>
+<body>
+
+    <div id="toggle">
+                <div id="fade-in"></div>
+                <img src="img/Tablet login-amico.png" alt="img signin" id="bgimgg">    
+                <img src="img/Sign up-amico.png" alt="img signup" id="bgimg">
+
+
+                <form>
+                    <div id="container1">        
+                        <h1>SIGN UP</h1>
+                        <br>
+                        <img src="./img/icons8-customer-26.png" alt="user icon" class="icon1">
+                        <input type="text" placeholder="USER NAME" id="use" class="iinputstyle" required/>
+                        <br>
+                        <img src="./img/icons8-customer-26.png" alt="user icon" class="icon1">
+                        <input type="email" placeholder="ENTER YOUR EMAIL" id="email1" class="inputstyle" required>
+                        <br>
+                        <img src="./img/icons8-lock-60.png" alt="lock icon">
+                        <input type="password" placeholder="ENTER PASSWORD" id="password1" pattern="{4}" class="inputstyle" required>
+                        <br>
+                        <img src="./img/icons8-lock-60.png" alt="lock icon">
+                        <input type="password" placeholder="CONFIRM PASSWORD" id="reenterpass" class="iinputstyle" pattern="{4}" required/>
+                        <br>
+                        <label>BIRTH : </label>
+                        <input type="date" id="birth" class="iinputstyle" required/>
+                        <br/>
+                        <label>GENDER : </label>
+                        <input type="radio" id="male" name="gender" value="gender"/>
+                        <label for="male"> Male   </label>
+                        <input type="radio" id="female" name="gender" value="gender"/>
+                        <label for="female"> Female</label>
+                        <button id="signup" class="defaultbutt" onclick="signup()">SIGN UP</button>
+                        <br>
+                        <a id="toggle" href="#"  onclick="fade()">Already Have An Account? Sign in</a>
+                        <br>
+                        <a class="logout" href="../index.html"  onclick="logout()">Log Out</a>
+                    </div>
+                </form>
+                <form>
+                    <div id="container2">        
+                        <h1>SIGN IN</h1>
+                        <br>
+                        <img src="./img/icons8-customer-26.png" alt="user icon" class="icon1">
+                        <input type="email" placeholder="ENTER YOUR EMAIL" id="email2" class="inputstyle" required>
+                        <br>
+                        <img src="./img/icons8-lock-60.png" alt="lock icon">
+                        <input type="password" placeholder="ENTER PASSWORD" id="password2" class="inputstyle" required>
+
+                        <button id="signin" class="defaultbutt" ><a id="pages" style="color: #fff; text-decoration: none" href="../index.html" onclick="signin()">SIGN IN</a></button>
+                        <a href="#" onclick="fade()">Need An Account? Sign Up Now</a>
+
+                        <div>
+                        <a class="logout" href="../index.html">Log Out</a>
+                        </div>
+                    </div>
+                </form>
+                
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
